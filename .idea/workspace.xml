@@ -5,34 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12c341d5-9a6b-4a2d-a1be-da2ff02b08b0" name="Changes" comment="Initial Setup">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/RedissonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/domain/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/domain/JobStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/repository/JobRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/service/JobExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/util/CronExpressionParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/db/migration/V1__create_jobs_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/redisson.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/service/JobSchedulerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/controller/JobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/messaging/JobConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/messaging/JobMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/messaging/JobPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/security/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/security/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/db/migration/V2__create_jobs_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/controller/JobControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/messaging/JobConsumerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/messaging/JobPublisherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/security/JwtServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/distributed_task_scheduler/DistributedTaskSchedulerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/example/distributed_task_scheduler/DistributedTaskSchedulerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-scheduler/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-scheduler/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/service/JobScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/service/JobScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/resources/db/migration/V1__create_jobs_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/db/migration/V1__create_jobs_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/resources/redisson.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/redisson.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/service/JobSchedulerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/service/JobSchedulerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,9 +108,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -176,7 +179,20 @@
       <workItem from="1780715229642" duration="11955000" />
       <workItem from="1780739905469" duration="7013000" />
       <workItem from="1780751933485" duration="412000" />
-      <workItem from="1780805307162" duration="662000" />
+      <workItem from="1780805307162" duration="7026000" />
+      <workItem from="1780815070602" duration="7891000" />
+      <workItem from="1780838057750" duration="4010000" />
+      <workItem from="1780913579963" duration="5596000" />
+      <workItem from="1781070207168" duration="3973000" />
+      <workItem from="1781099278862" duration="5145000" />
+      <workItem from="1781153280483" duration="3745000" />
+      <workItem from="1781187752489" duration="1978000" />
+      <workItem from="1781239198509" duration="4280000" />
+      <workItem from="1781270576690" duration="7952000" />
+      <workItem from="1781345534409" duration="2457000" />
+      <workItem from="1781348117971" duration="3461000" />
+      <workItem from="1781356504559" duration="6478000" />
+      <workItem from="1781441035980" duration="3952000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <option name="closed" value="true" />
@@ -194,7 +210,111 @@
       <option name="project" value="LOCAL" />
       <updated>1778426756579</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created Initial Security">
+      <option name="closed" value="true" />
+      <created>1780806034497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806034504</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Script for table creation">
+      <option name="closed" value="true" />
+      <created>1780806066674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806066674</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Redisson Config">
+      <option name="closed" value="true" />
+      <created>1780806083113</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806083114</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated Docker Compose">
+      <option name="closed" value="true" />
+      <created>1780806110410</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806110410</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Job Entity">
+      <option name="closed" value="true" />
+      <created>1780806131059</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806131059</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added Job Status Enum">
+      <option name="closed" value="true" />
+      <created>1780806155079</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806155079</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Job Scheduler test">
+      <option name="closed" value="true" />
+      <created>1780806173462</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806173462</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added Job Executor Service for business logic">
+      <option name="closed" value="true" />
+      <created>1780806222549</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806222549</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added Job Repository for DAO">
+      <option name="closed" value="true" />
+      <created>1780806249190</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806249190</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added Cron Parser Util">
+      <option name="closed" value="true" />
+      <created>1780806301381</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806301381</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added redisson properties">
+      <option name="closed" value="true" />
+      <created>1780806357588</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806357588</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Initial Setup">
+      <option name="closed" value="true" />
+      <created>1780806380327</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806380327</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Initial Setup">
+      <option name="closed" value="true" />
+      <created>1780806405264</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1780806405264</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +332,30 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created Initial Security" />
+    <MESSAGE value="Script for table creation" />
+    <MESSAGE value="Added Redisson Config" />
+    <MESSAGE value="Updated Docker Compose" />
+    <MESSAGE value="Added Job Entity" />
+    <MESSAGE value="Added Job Status Enum" />
+    <MESSAGE value="Added Job Scheduler test" />
+    <MESSAGE value="Added Job Executor Service for business logic" />
+    <MESSAGE value="Added Job Repository for DAO" />
+    <MESSAGE value="Added Cron Parser Util" />
+    <MESSAGE value="Added redisson properties" />
     <MESSAGE value="Initial Setup" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Setup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/security/JwtService.java</url>
+          <line>22</line>
+          <properties field="jwtExpirationMs" class="com.ankitmishra.task_scheduler.security.JwtService" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
