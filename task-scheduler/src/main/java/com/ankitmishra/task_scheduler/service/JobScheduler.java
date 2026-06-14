@@ -2,6 +2,7 @@ package com.ankitmishra.task_scheduler.service;
 
 import com.ankitmishra.task_scheduler.domain.Job;
 import com.ankitmishra.task_scheduler.domain.JobStatus;
+import com.ankitmishra.task_scheduler.messaging.JobPublisher;
 import com.ankitmishra.task_scheduler.repository.JobRepository;
 import com.ankitmishra.task_scheduler.util.CronExpressionParser;
 import lombok.AllArgsConstructor;
@@ -27,6 +28,7 @@ public class JobScheduler {
     private final JobRepository jobRepository;
     private final RedissonClient redissonClient;
     private final JobExecutor jobExecutor;
+    private final JobPublisher jobPublisher;
 
     @Scheduled(fixedDelay = 5000)
     public void pollAndExecute(){
@@ -80,20 +82,23 @@ public class JobScheduler {
         job.setStatus(JobStatus.RUNNING);
         jobRepository.save(job);
 
-        try{
-            jobExecutor.execute(job);
+        jobPublisher.publish(job);
+        log.info("Job [{}] dispatched to queue", job.getId());
 
-            job.setStatus(JobStatus.SUCCESS);
-            job.setRetryCount(0);
-            job.setNextRunAt(CronExpressionParser.getNextRunTime(job.getCronExpression()));
-            job.setStatus(JobStatus.PENDING);
-            jobRepository.save(job);
-
-            log.info("Job [{}] succeeded — next run at {}", job.getId(), job.getNextRunAt());
-
-        }catch(Exception e){
-            handleFailure(job,e);
-        }
+//        try{
+//            jobExecutor.execute(job);
+//
+//            job.setStatus(JobStatus.SUCCESS);
+//            job.setRetryCount(0);
+//            job.setNextRunAt(CronExpressionParser.getNextRunTime(job.getCronExpression()));
+//            job.setStatus(JobStatus.PENDING);
+//            jobRepository.save(job);
+//
+//            log.info("Job [{}] succeeded — next run at {}", job.getId(), job.getNextRunAt());
+//
+//        }catch(Exception e){
+//            handleFailure(job,e);
+//        }
     }
 
     private void handleFailure(Job job,Exception e){
