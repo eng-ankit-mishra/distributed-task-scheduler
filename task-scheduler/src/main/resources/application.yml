@@ -10,9 +10,9 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: validate
     show-sql: true
-    defer-datasource-initialization: true
+    defer-datasource-initialization: false
     properties:
       hibernate:
         format_sql: true
@@ -27,6 +27,18 @@ spring:
       host: localhost
       port: 6379
 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: secret
+    listener:
+      simple:
+        acknowledge-mode: auto      # auto-ack on success, nack on exception
+        retry:
+          enabled: false            # We handle retry manually in the consumer
+        prefetch: 1
+
 
 server:
   port: 8080
@@ -36,3 +48,8 @@ management:
     web:
       exposure:
         include: health,info,metrics
+
+app:
+  jwt:
+    secret: "x4swQUtV4JUn0fsCMOXXGPkxfkyqmNva9F/towHa7ns="
+    expiration-ms: 86400000
