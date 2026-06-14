@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12c341d5-9a6b-4a2d-a1be-da2ff02b08b0" name="Changes" comment="Initial Setup">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/controller/JobController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/messaging/JobConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/messaging/JobMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/messaging/JobPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/security/JwtAuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/security/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/db/migration/V2__create_jobs_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/controller/JobControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/messaging/JobConsumerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/messaging/JobPublisherTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/security/JwtServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-scheduler/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-scheduler/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/service/JobScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/java/com/ankitmishra/task_scheduler/service/JobScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/resources/db/migration/V1__create_jobs_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/db/migration/V1__create_jobs_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-scheduler/src/main/resources/redisson.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/main/resources/redisson.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/service/JobSchedulerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/service/JobSchedulerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="12c341d5-9a6b-4a2d-a1be-da2ff02b08b0" name="Changes" comment="Added flyway tables" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +160,7 @@
       <workItem from="1781345534409" duration="2457000" />
       <workItem from="1781348117971" duration="3461000" />
       <workItem from="1781356504559" duration="6478000" />
-      <workItem from="1781441035980" duration="3952000" />
+      <workItem from="1781441035980" duration="4933000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <option name="closed" value="true" />
@@ -314,7 +282,247 @@
       <option name="project" value="LOCAL" />
       <updated>1780806405264</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Updated JWT secret">
+      <option name="closed" value="true" />
+      <created>1781446865147</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1781446865148</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add application-test.yml">
+      <option name="closed" value="true" />
+      <created>1781446899005</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1781446899005</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updated the API routes of Authentication">
+      <option name="closed" value="true" />
+      <created>1781446934979</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1781446934979</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added CI pipeline">
+      <option name="closed" value="true" />
+      <created>1781446958007</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1781446958007</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Updated Docker-compose added Username">
+      <option name="closed" value="true" />
+      <created>1781446982104</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1781446982104</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updated DockerFile add Multi-stage build">
+      <option name="closed" value="true" />
+      <created>1781447027254</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447027254</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added Job Consumer">
+      <option name="closed" value="true" />
+      <created>1781447077568</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447077568</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added Job Consumer Test">
+      <option name="closed" value="true" />
+      <created>1781447090707</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447090707</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added Job Controller">
+      <option name="closed" value="true" />
+      <created>1781447111549</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447111549</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added Job Controller Test">
+      <option name="closed" value="true" />
+      <created>1781447126818</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447126818</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added Job Message">
+      <option name="closed" value="true" />
+      <created>1781447149156</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447149156</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added Job Publisher">
+      <option name="closed" value="true" />
+      <created>1781447162809</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447162809</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added Job Publisher Test">
+      <option name="closed" value="true" />
+      <created>1781447175295</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447175295</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added Job Scheduler">
+      <option name="closed" value="true" />
+      <created>1781447203723</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447203723</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added Job Scheduler Test">
+      <option name="closed" value="true" />
+      <created>1781447216480</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447216480</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added Job Auth Filter">
+      <option name="closed" value="true" />
+      <created>1781447290046</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447290046</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added Jwt Service">
+      <option name="closed" value="true" />
+      <created>1781447318021</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447318022</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added Jwt Service Test">
+      <option name="closed" value="true" />
+      <created>1781447334468</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447334468</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added RabbitMQConfig">
+      <option name="closed" value="true" />
+      <created>1781447358274</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447358274</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added User">
+      <option name="closed" value="true" />
+      <created>1781447394903</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447394903</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Added UserDetailsServiceImpl">
+      <option name="closed" value="true" />
+      <created>1781447416444</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447416444</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added workspace.xml">
+      <option name="closed" value="true" />
+      <created>1781447455820</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447455820</updated>
+    </task>
+    <task id="LOCAL-00038" summary="initial setup">
+      <option name="closed" value="true" />
+      <created>1781447488973</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447488973</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added Dependency">
+      <option name="closed" value="true" />
+      <created>1781447506210</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447506210</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Added redisson properties">
+      <option name="closed" value="true" />
+      <created>1781447530950</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447530950</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Added security configuration">
+      <option name="closed" value="true" />
+      <created>1781447557160</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447557160</updated>
+    </task>
+    <task id="LOCAL-00042" summary="initial setup">
+      <option name="closed" value="true" />
+      <created>1781447585865</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447585865</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Added User Repository">
+      <option name="closed" value="true" />
+      <created>1781447605857</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447605858</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Added flyway tables">
+      <option name="closed" value="true" />
+      <created>1781447643654</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447643654</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Added flyway tables">
+      <option name="closed" value="true" />
+      <created>1781447649864</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447649864</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,19 +540,32 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created Initial Security" />
-    <MESSAGE value="Script for table creation" />
-    <MESSAGE value="Added Redisson Config" />
-    <MESSAGE value="Updated Docker Compose" />
-    <MESSAGE value="Added Job Entity" />
-    <MESSAGE value="Added Job Status Enum" />
-    <MESSAGE value="Added Job Scheduler test" />
-    <MESSAGE value="Added Job Executor Service for business logic" />
-    <MESSAGE value="Added Job Repository for DAO" />
-    <MESSAGE value="Added Cron Parser Util" />
+    <MESSAGE value="Added CI pipeline" />
+    <MESSAGE value="Updated Docker-compose added Username" />
+    <MESSAGE value="Updated DockerFile add Multi-stage build" />
+    <MESSAGE value="Added Job Consumer" />
+    <MESSAGE value="Added Job Consumer Test" />
+    <MESSAGE value="Added Job Controller" />
+    <MESSAGE value="Added Job Controller Test" />
+    <MESSAGE value="Added Job Message" />
+    <MESSAGE value="Added Job Publisher" />
+    <MESSAGE value="Added Job Publisher Test" />
+    <MESSAGE value="Added Job Scheduler" />
+    <MESSAGE value="Added Job Scheduler Test" />
+    <MESSAGE value="Added Job Auth Filter" />
+    <MESSAGE value="Added Jwt Service" />
+    <MESSAGE value="Added Jwt Service Test" />
+    <MESSAGE value="Added RabbitMQConfig" />
+    <MESSAGE value="Added User" />
+    <MESSAGE value="Added UserDetailsServiceImpl" />
+    <MESSAGE value="Added workspace.xml" />
+    <MESSAGE value="Added Dependency" />
     <MESSAGE value="Added redisson properties" />
-    <MESSAGE value="Initial Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Setup" />
+    <MESSAGE value="Added security configuration" />
+    <MESSAGE value="initial setup" />
+    <MESSAGE value="Added User Repository" />
+    <MESSAGE value="Added flyway tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added flyway tables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
