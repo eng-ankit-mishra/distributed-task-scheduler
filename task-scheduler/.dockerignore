@@ -1,6 +1,6 @@
 target/
 .git/
-../.github/
+.github/
 *.md
 .mvn/
 mvnw
