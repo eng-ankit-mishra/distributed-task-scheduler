@@ -13,6 +13,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 
+
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
@@ -26,7 +27,8 @@ import static org.mockito.Mockito.*;
 class JobSchedulerTest {
 
     @Mock private JobRepository jobRepository;
-    @Mock private RedissonClient redissonClient;
+    @Mock
+    private RedissonClient redissonClient;
     @Mock private JobPublisher jobPublisher;
     @Mock private RLock rLock;
 
