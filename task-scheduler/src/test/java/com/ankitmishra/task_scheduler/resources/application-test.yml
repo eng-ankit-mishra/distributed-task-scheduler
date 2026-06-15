@@ -11,3 +11,7 @@ spring:
     enabled: false
   rabbitmq:
     host: localhost
+
+  task:
+    scheduling:
+      enabled: false
