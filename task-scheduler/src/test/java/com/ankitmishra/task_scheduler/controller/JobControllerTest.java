@@ -1,5 +1,6 @@
 package com.ankitmishra.task_scheduler.controller;
 
+import com.ankitmishra.task_scheduler.config.TestRedisConfig;
 import com.ankitmishra.task_scheduler.domain.Job;
 import com.ankitmishra.task_scheduler.domain.JobStatus;
 import com.ankitmishra.task_scheduler.repository.JobRepository;
@@ -10,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
@@ -24,6 +26,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
+@Import(TestRedisConfig.class)
 class JobControllerTest {
 
     @Autowired private MockMvc mockMvc;
