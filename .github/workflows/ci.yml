@@ -13,20 +13,12 @@ jobs:
     name: Build, Test, Coverage
     runs-on: ubuntu-latest
 
+    # Swapped Postgres for RabbitMQ
     services:
-      postgres:
-        image: postgres:15
-        env:
-          POSTGRES_DB: taskscheduler_test
-          POSTGRES_USER: admin
-          POSTGRES_PASSWORD: secret
+      rabbitmq:
+        image: rabbitmq:3-management
         ports:
-          - 5432:5432
-        options: >-
-          --health-cmd="pg_isready -U admin -d taskscheduler_test"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
+          - 5672:5672
 
     defaults:
       run:
