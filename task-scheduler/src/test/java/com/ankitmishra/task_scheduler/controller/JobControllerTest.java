@@ -8,11 +8,17 @@ import com.ankitmishra.task_scheduler.security.JwtService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import com.ankitmishra.task_scheduler.config.UserDetailsServiceImpl;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -34,14 +40,36 @@ class JobControllerTest {
     @Autowired private JwtService jwtService;
     @Autowired private ObjectMapper objectMapper;
 
+    // Mock the UserDetailsService to bypass DB lookups during tests
+    @MockitoBean private UserDetailsServiceImpl userDetailsService;
+
     private String adminToken;
     private String viewerToken;
 
     @BeforeEach
     void setUp() {
         jobRepository.deleteAll();
+
+        // Generate the tokens
         adminToken  = "Bearer " + jwtService.generateToken("admin",  "ROLE_ADMIN");
         viewerToken = "Bearer " + jwtService.generateToken("viewer", "ROLE_VIEWER");
+
+        // Mock the user details so the JwtAuthFilter can successfully authenticate them
+        UserDetails mockAdmin = User.builder()
+                .username("admin")
+                .password("password")
+                .authorities("ROLE_ADMIN")
+                .build();
+
+        UserDetails mockViewer = User.builder()
+                .username("viewer")
+                .password("password")
+                .authorities("ROLE_VIEWER")
+                .build();
+
+        // Tell Mockito to return the mocked users when the filter requests them
+        Mockito.when(userDetailsService.loadUserByUsername("admin")).thenReturn(mockAdmin);
+        Mockito.when(userDetailsService.loadUserByUsername("viewer")).thenReturn(mockViewer);
     }
 
     @Test
