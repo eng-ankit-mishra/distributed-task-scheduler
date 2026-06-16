@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12c341d5-9a6b-4a2d-a1be-da2ff02b08b0" name="Changes" comment="Added flyway tables" />
+    <list default="true" id="12c341d5-9a6b-4a2d-a1be-da2ff02b08b0" name="Changes" comment="Updated folder structure of ci workflow">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-scheduler/src/test/java/com/ankitmishra/task_scheduler/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task-scheduler/src/test/resources/application-test.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,11 +93,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amish\Projects\distributed-task-scheduler" />
+      <recent name="C:\Users\amish\Projects\distributed-task-scheduler\task-scheduler" />
       <recent name="C:\Users\amish\Projects\distributed-task-scheduler\task-scheduler\src\main\resources\db\migration" />
       <recent name="C:\Users\amish\Projects\distributed-task-scheduler\task-scheduler\src\main\resources" />
       <recent name="C:\Users\amish\Projects\distributed-task-scheduler\task-scheduler\src\main\resources\db" />
-      <recent name="C:\Users\amish\Projects\distributed-task-scheduler\task-scheduler" />
-      <recent name="C:\Users\amish\Projects\distributed-task-scheduler" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.TaskSchedulerApplication">
@@ -160,95 +163,10 @@
       <workItem from="1781345534409" duration="2457000" />
       <workItem from="1781348117971" duration="3461000" />
       <workItem from="1781356504559" duration="6478000" />
-      <workItem from="1781441035980" duration="4933000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial Setup">
-      <option name="closed" value="true" />
-      <created>1778426335071</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1778426335072</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initial Setup">
-      <option name="closed" value="true" />
-      <created>1778426756579</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1778426756579</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Created Initial Security">
-      <option name="closed" value="true" />
-      <created>1780806034497</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1780806034504</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Script for table creation">
-      <option name="closed" value="true" />
-      <created>1780806066674</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1780806066674</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added Redisson Config">
-      <option name="closed" value="true" />
-      <created>1780806083113</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1780806083114</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Updated Docker Compose">
-      <option name="closed" value="true" />
-      <created>1780806110410</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1780806110410</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added Job Entity">
-      <option name="closed" value="true" />
-      <created>1780806131059</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1780806131059</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added Job Status Enum">
-      <option name="closed" value="true" />
-      <created>1780806155079</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1780806155079</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added Job Scheduler test">
-      <option name="closed" value="true" />
-      <created>1780806173462</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1780806173462</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Added Job Executor Service for business logic">
-      <option name="closed" value="true" />
-      <created>1780806222549</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1780806222549</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Added Job Repository for DAO">
-      <option name="closed" value="true" />
-      <created>1780806249190</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1780806249190</updated>
+      <workItem from="1781441035980" duration="11212000" />
+      <workItem from="1781517747679" duration="3842000" />
+      <workItem from="1781531702317" duration="9205000" />
+      <workItem from="1781604556123" duration="4414000" />
     </task>
     <task id="LOCAL-00012" summary="Added Cron Parser Util">
       <option name="closed" value="true" />
@@ -522,7 +440,127 @@
       <option name="project" value="LOCAL" />
       <updated>1781447649864</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="initial setup">
+      <option name="closed" value="true" />
+      <created>1781447720673</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1781447720673</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Added dockerignore file">
+      <option name="closed" value="true" />
+      <created>1781450019730</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1781450019730</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Updated the folder structure">
+      <option name="closed" value="true" />
+      <created>1781450403129</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1781450403133</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Updated the ci file">
+      <option name="closed" value="true" />
+      <created>1781450521670</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1781450521670</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Updated the ci file and docker file">
+      <option name="closed" value="true" />
+      <created>1781451206249</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1781451206255</updated>
+    </task>
+    <task id="LOCAL-00051" summary="task scheduling configuration">
+      <option name="closed" value="true" />
+      <created>1781524917710</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1781524917730</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Added CI Pipelines">
+      <option name="closed" value="true" />
+      <created>1781524939473</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1781524939473</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Update RedisClient setup">
+      <option name="closed" value="true" />
+      <created>1781525002527</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1781525002527</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Added RedisClient setup">
+      <option name="closed" value="true" />
+      <created>1781525047298</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1781525047298</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Added Redis dependencies">
+      <option name="closed" value="true" />
+      <created>1781525072022</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1781525072022</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Added Redis Configuration">
+      <option name="closed" value="true" />
+      <created>1781525098416</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1781525098418</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Added Spring Profile Annotation">
+      <option name="closed" value="true" />
+      <created>1781525133698</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1781525133698</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Added TestRedisConfig">
+      <option name="closed" value="true" />
+      <created>1781525166766</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1781525166769</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Updated dockerignore">
+      <option name="closed" value="true" />
+      <created>1781525190038</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1781525190038</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Updated folder structure of ci workflow">
+      <option name="closed" value="true" />
+      <created>1781525365526</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1781525365526</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,20 +578,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added CI pipeline" />
-    <MESSAGE value="Updated Docker-compose added Username" />
-    <MESSAGE value="Updated DockerFile add Multi-stage build" />
-    <MESSAGE value="Added Job Consumer" />
-    <MESSAGE value="Added Job Consumer Test" />
-    <MESSAGE value="Added Job Controller" />
-    <MESSAGE value="Added Job Controller Test" />
-    <MESSAGE value="Added Job Message" />
-    <MESSAGE value="Added Job Publisher" />
-    <MESSAGE value="Added Job Publisher Test" />
-    <MESSAGE value="Added Job Scheduler" />
-    <MESSAGE value="Added Job Scheduler Test" />
-    <MESSAGE value="Added Job Auth Filter" />
-    <MESSAGE value="Added Jwt Service" />
     <MESSAGE value="Added Jwt Service Test" />
     <MESSAGE value="Added RabbitMQConfig" />
     <MESSAGE value="Added User" />
@@ -562,10 +586,24 @@
     <MESSAGE value="Added Dependency" />
     <MESSAGE value="Added redisson properties" />
     <MESSAGE value="Added security configuration" />
-    <MESSAGE value="initial setup" />
     <MESSAGE value="Added User Repository" />
     <MESSAGE value="Added flyway tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added flyway tables" />
+    <MESSAGE value="initial setup" />
+    <MESSAGE value="Added dockerignore file" />
+    <MESSAGE value="Updated the folder structure" />
+    <MESSAGE value="Updated the ci file" />
+    <MESSAGE value="Updated the ci file and docker file" />
+    <MESSAGE value="task scheduling configuration" />
+    <MESSAGE value="Added CI Pipelines" />
+    <MESSAGE value="Update RedisClient setup" />
+    <MESSAGE value="Added RedisClient setup" />
+    <MESSAGE value="Added Redis dependencies" />
+    <MESSAGE value="Added Redis Configuration" />
+    <MESSAGE value="Added Spring Profile Annotation" />
+    <MESSAGE value="Added TestRedisConfig" />
+    <MESSAGE value="Updated dockerignore" />
+    <MESSAGE value="Updated folder structure of ci workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated folder structure of ci workflow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
